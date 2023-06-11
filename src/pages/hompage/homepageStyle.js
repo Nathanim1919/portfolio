@@ -9,9 +9,24 @@ export const Container = styled.div `
   padding: 4rem;
   overflow: hidden;
 
+  .hero-text button{
+    border: none;
+    padding: .5rem 1.4rem;
+    display: grid;
+    place-items: center;
+    background-color: lightblue;
+    box-shadow: 0 7px 10px rgba(0,0,0,.4);
+    border-radius: 5px;
+  }
+
+  .hero-text > h1{
+    animation: hero 1s;
+  }
+
   .overlay{
     position: absolute;
     top: 10%;
+    animation: anim 3s linear;
     
     > h1{
         opacity: .1;
@@ -20,7 +35,45 @@ export const Container = styled.div `
     }
   }
 
-  h1 {
+
+  /* key frames */
+
+  @keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  @keyframes anim2 {
+    0%{
+        opacity: 0;
+        transform: translateX(240px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  @keyframes hero {
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+
+
+  /* key frame ends */
+  
+
+    h1 {
     font-size: 5rem;
     color: #fff;
     line-height: 70px;
@@ -47,18 +100,19 @@ export const Container = styled.div `
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    opacity: .071;
+    animation: anim2 3s linear;
     
     h1{
-        font-family: 'Poppins';
+        /* font-family: 'Poppins', sans-serif; */
         font-size: 15rem;
-        
+        opacity: .071;
     }
 
     span{
         height: 3px;
         flex: 1;
         background-color: #eee;
+        opacity: .071;
     }
   }
 `;

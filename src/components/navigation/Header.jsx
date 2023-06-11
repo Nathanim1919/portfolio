@@ -11,8 +11,8 @@ export default function () {
 
      <nav>
         <ul>
-            <NavLink>about</NavLink>
-            <NavLink>work</NavLink>
+            <NavLink to={'/'}>work</NavLink>
+            <NavLink to={'/'}>about</NavLink>
         </ul>
      </nav>
     </Container>

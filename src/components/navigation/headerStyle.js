@@ -16,9 +16,11 @@ export const Container = styled.div `
       font-size:.9rem;
 
       a{
+        font-family: 'Poppins', sans-serif;
         text-decoration:none;
          color: #eee;
          text-transform: uppercase;
+         font-weight: 200;
       }
     }
   }

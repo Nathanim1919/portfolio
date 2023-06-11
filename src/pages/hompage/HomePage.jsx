@@ -8,10 +8,11 @@ export default function HomePage() {
       <div className="overlay">
         <h1>DEVELOPER</h1>
       </div>
-      <div>
+      <div className='hero-text'>
         <h1>
           <span>i'm a</span><br/>FULL STACK<br/>SOFTWARE<br/>DEVELOPER
         </h1>
+        {/* <button>HIRE ME</button> */}
       </div>
 
       <Animations className="animations">
